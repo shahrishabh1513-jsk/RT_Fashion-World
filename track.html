@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Track Your Order | RT Fashion Hub</title>
+    <meta name="description" content="Track your RT Fashion Hub order status live and download your bill.">
+    <meta property="og:title" content="Track Your Order | RT Fashion Hub">
+    <meta property="og:description" content="Track your RT Fashion Hub order status live and download your bill.">
+    <meta property="og:image" content="images/brand/logo.png">
+    <link rel="icon" type="image/png" href="images/brand/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body data-page="track">
+    <div id="site-header"></div>
+    <section class="page-hero" style="padding:46px 24px">
+        <div class="crumbs">Home / Order Tracking</div>
+        <h1>Track Your Order</h1>
+        <p>Enter your order number and email to see live progress.</p>
+    </section>
+    <main class="section--tight">
+        <div class="container" style="max-width:900px">
+            <form class="form-card" id="trackForm" novalidate>
+                <div class="form-grid">
+                    <div class="field"><label for="tId">Order number</label><input id="tId"
+                            placeholder="RT-ORD-2026-00001"></div>
+                    <div class="field"><label for="tEmail">Email address</label><input id="tEmail" type="email"></div>
+                    <div class="full"><button class="btn btn--dark" type="submit">Track Order</button>
+                        <div class="form-msg" id="tOut" role="status"></div>
+                    </div>
+                </div>
+            </form>
+            <div id="trackResult" aria-live="polite"></div>
+        </div>
+    </main>
+    <div id="site-footer"></div>
+    <script src="js/config.js"></script>
+    <script src="js/products-data.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/vendor/jspdf.umd.min.js"></script>
+    <script src="js/invoice.js"></script>
+    <script src="js/track.js"></script>
+</body>
+
+</html>

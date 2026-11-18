@@ -16,6 +16,7 @@ python3 -m http.server 8000      # then visit http://localhost:8000
 | Colours / layout | `css/styles.css` (`:root` variables at top) |
 | Product photos | put files in `images/products/` and set `image:` in `products-data.js` |
 | Logo files | `images/brand/` |
+| Bill (PDF) layout, GSTIN, bill terms, owner PIN | `js/invoice.js`, `js/config.js` |
 | Optional: auto-download product photos from the Flipkart links | `node tools/fetch-product-images.js` (run locally; untested against live Flipkart) |
 
 ### Add a SALE tag
