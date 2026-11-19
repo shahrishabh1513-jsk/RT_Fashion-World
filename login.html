@@ -1,114 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login or Register | RT Fashion Hub</title>
-    <meta name="description"
-        content="Log in or create your RT Fashion Hub account to track orders, save your wishlist and check out faster.">
-    <meta property="og:title" content="Login or Register | RT Fashion Hub">
-    <meta property="og:description"
-        content="Log in or create your RT Fashion Hub account to track orders, save your wishlist and check out faster.">
-    <meta property="og:image" content="images/brand/logo.png">
-    <link rel="icon" type="image/png" href="images/brand/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login or Register | RT Fashion Hub</title>
+<meta name="description" content="Log in or create your RT Fashion Hub account to track orders, save your wishlist and check out faster.">
+<meta property="og:title" content="Login or Register | RT Fashion Hub"><meta property="og:description" content="Log in or create your RT Fashion Hub account to track orders, save your wishlist and check out faster."><meta property="og:image" content="images/brand/logo.png">
+<link rel="icon" type="image/png" href="images/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body data-page="login">
-    <div id="site-header"></div>
-    <main class="section--tight" style="padding:60px 0">
-        <div class="container">
-            <div class="auth-wrap">
-                <div style="text-align:center;margin-bottom:26px">
-                    <h1 style="font-size:2.2rem" id="authTitle">Welcome back</h1>
-                    <p style="color:var(--muted)">Log in or create your RT Fashion Hub account.</p>
-                </div>
-                <div class="demo-note"><b>Demo authentication.</b> Accounts are saved only in this browser (passwords
-                    are salted and hashed, never stored as plain text). A real launch needs a server backend.</div>
-                <div class="tabs" role="tablist"><button class="on" role="tab" id="tabLogin"
-                        aria-selected="true">Login</button><button role="tab" id="tabReg"
-                        aria-selected="false">Register</button></div>
-                <form class="form-card" id="loginForm" novalidate>
-                    <div style="display:grid;gap:16px">
-                        <div class="field"><label for="lEmail">Email Address *</label><input id="lEmail" type="email"
-                                autocomplete="email" required><span class="err"></span></div>
-                        <div class="field"><label for="lPass">Password *</label>
-                            <div class="pw"><input id="lPass" type="password" autocomplete="current-password"
-                                    required><button type="button" data-toggle="lPass" aria-label="Show password"
-                                    data-ico="eye"></button></div><span class="err"></span>
-                        </div>
-                        <div class="row-between"><label class="check"><input type="checkbox" id="lRemember"> Remember
-                                Me</label><a href="#" class="link" id="forgotLink">Forgot Password?</a></div>
-                        <button class="btn btn--dark btn--block" type="submit">Login</button>
-                        <div class="form-msg" id="lOut" role="status"></div>
-                        <p style="text-align:center;font-size:.9rem">New here? <a href="#register" class="link"
-                                id="toReg">Create Account</a></p>
-                    </div>
-                </form>
-                <form class="form-card" id="regForm" novalidate hidden>
-                    <div class="form-grid">
-                        <div class="field full"><label for="rName">Full Name *</label><input id="rName"
-                                autocomplete="name" required><span class="err"></span></div>
-                        <div class="field"><label for="rEmail">Email Address *</label><input id="rEmail" type="email"
-                                autocomplete="email" required><span class="err"></span></div>
-                        <div class="field"><label for="rMobile">Mobile Number *</label><input id="rMobile" type="tel"
-                                autocomplete="tel" placeholder="10-digit mobile" required><span class="err"></span>
-                        </div>
-                        <div class="field"><label for="rPass">Password *</label>
-                            <div class="pw"><input id="rPass" type="password" autocomplete="new-password"
-                                    required><button type="button" data-toggle="rPass" aria-label="Show password"
-                                    data-ico="eye"></button></div><span class="err"></span>
-                        </div>
-                        <div class="field"><label for="rPass2">Confirm Password *</label>
-                            <div class="pw"><input id="rPass2" type="password" autocomplete="new-password"
-                                    required><button type="button" data-toggle="rPass2" aria-label="Show password"
-                                    data-ico="eye"></button></div><span class="err"></span>
-                        </div>
-                        <div class="field full"><label for="rAddr">Address (optional)</label><textarea id="rAddr"
-                                rows="3" autocomplete="street-address"></textarea></div>
-                        <div class="full"><label class="check"><input type="checkbox" id="rTerms"> I accept the Terms
-                                &amp; Conditions *</label><span class="err" id="rTermsErr"
-                                style="color:var(--danger);font-size:.76rem"></span></div>
-                        <div class="full"><button class="btn btn--dark btn--block" type="submit">Create Account</button>
-                            <div class="form-msg" id="rOut" role="status"></div>
-                            <p style="text-align:center;font-size:.9rem;margin-top:12px">Already registered? <a
-                                    href="#login" class="link" id="toLogin">Login</a></p>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </main>
-    <div class="modal" id="forgotModal" role="dialog" aria-modal="true" aria-labelledby="fTitle">
-        <div class="box"><button class="icon-btn" style="position:absolute;top:10px;right:10px" id="fClose"
-                aria-label="Close" data-ico="x"></button>
-            <h3 id="fTitle" style="margin-bottom:8px">Forgot password</h3>
-            <p class="note" style="margin:0 0 16px">Email-based reset needs a server and email service, which this
-                static site doesn't have. For this demo you can set a new password on this device.</p>
-            <form id="forgotForm" novalidate style="display:grid;gap:14px">
-                <div class="field"><label for="fEmail">Account email</label><input id="fEmail" type="email" required>
-                </div>
-                <div class="field"><label for="fPass">New password *</label>
-                    <div class="pw"><input id="fPass" type="password" autocomplete="new-password" required><button
-                            type="button" data-toggle="fPass" aria-label="Show password" data-ico="eye"></button></div>
-                    <span class="err"></span>
-                </div><button class="btn btn--dark btn--block" type="submit">Reset password (demo)</button>
-                <div class="form-msg" id="fOut" role="status"></div>
-            </form>
-        </div>
-    </div>
-    <div id="site-footer"></div>
-    <script src="js/config.js"></script>
-    <script src="js/products-data.js"></script>
-    <script src="js/store.js"></script>
-    <script src="js/components.js"></script>
-    <script src="js/auth.js"></script>
+<div id="site-header"></div>
+<main class="section--tight" style="padding:60px 0"><div class="container"><div class="auth-wrap">
+<div style="text-align:center;margin-bottom:26px"><h1 style="font-size:2.2rem" id="authTitle">Welcome back</h1><p style="color:var(--muted)">Log in or create your RT Fashion Hub account.</p></div>
+<div class="demo-note"><b>Demo authentication.</b> Accounts are saved only in this browser (passwords are salted and hashed, never stored as plain text). A real launch needs a server backend.</div>
+<div class="tabs" role="tablist"><button class="on" role="tab" id="tabLogin" aria-selected="true">Login</button><button role="tab" id="tabReg" aria-selected="false">Register</button></div>
+<form class="form-card" id="loginForm" novalidate><div style="display:grid;gap:16px">
+ <div class="field"><label for="lEmail">Email Address *</label><input id="lEmail" type="email" autocomplete="email" required><span class="err"></span></div>
+ <div class="field"><label for="lPass">Password *</label><div class="pw"><input id="lPass" type="password" autocomplete="current-password" required><button type="button" data-toggle="lPass" aria-label="Show password" data-ico="eye"></button></div><span class="err"></span></div>
+ <div class="row-between"><label class="check"><input type="checkbox" id="lRemember"> Remember Me</label><a href="#" class="link" id="forgotLink">Forgot Password?</a></div>
+ <button class="btn btn--dark btn--block" type="submit">Login</button><div class="form-msg" id="lOut" role="status"></div>
+ <p style="text-align:center;font-size:.9rem">New here? <a href="#register" class="link" id="toReg">Create Account</a></p></div></form>
+<form class="form-card" id="regForm" novalidate hidden><div class="form-grid">
+ <div class="field full"><label for="rName">Full Name *</label><input id="rName" autocomplete="name" required><span class="err"></span></div>
+ <div class="field"><label for="rEmail">Email Address *</label><input id="rEmail" type="email" autocomplete="email" required><span class="err"></span></div>
+ <div class="field"><label for="rMobile">Mobile Number *</label><input id="rMobile" type="tel" autocomplete="tel" placeholder="10-digit mobile" required><span class="err"></span></div>
+ <div class="field"><label for="rPass">Password *</label><div class="pw"><input id="rPass" type="password" autocomplete="new-password" required><button type="button" data-toggle="rPass" aria-label="Show password" data-ico="eye"></button></div><span class="err"></span></div><div class="field"><label for="rPass2">Confirm Password *</label><div class="pw"><input id="rPass2" type="password" autocomplete="new-password" required><button type="button" data-toggle="rPass2" aria-label="Show password" data-ico="eye"></button></div><span class="err"></span></div>
+ <div class="field full"><label for="rAddr">Address (optional)</label><textarea id="rAddr" rows="3" autocomplete="street-address"></textarea></div>
+ <div class="full"><label class="check"><input type="checkbox" id="rTerms"> I accept the Terms &amp; Conditions *</label><span class="err" id="rTermsErr" style="color:var(--danger);font-size:.76rem"></span></div>
+ <div class="full"><button class="btn btn--dark btn--block" type="submit">Create Account</button><div class="form-msg" id="rOut" role="status"></div><p style="text-align:center;font-size:.9rem;margin-top:12px">Already registered? <a href="#login" class="link" id="toLogin">Login</a></p></div></div></form>
+</div></div></main>
+<div class="modal" id="forgotModal" role="dialog" aria-modal="true" aria-labelledby="fTitle"><div class="box"><button class="icon-btn" style="position:absolute;top:10px;right:10px" id="fClose" aria-label="Close" data-ico="x"></button><h3 id="fTitle" style="margin-bottom:8px">Forgot password</h3>
+<p class="note" style="margin:0 0 16px">Email-based reset needs a server and email service, which this static site doesn't have. For this demo you can set a new password on this device.</p>
+<form id="forgotForm" novalidate style="display:grid;gap:14px"><div class="field"><label for="fEmail">Account email</label><input id="fEmail" type="email" required></div><div class="field"><label for="fPass">New password *</label><div class="pw"><input id="fPass" type="password" autocomplete="new-password" required><button type="button" data-toggle="fPass" aria-label="Show password" data-ico="eye"></button></div><span class="err"></span></div><button class="btn btn--dark btn--block" type="submit">Reset password (demo)</button><div class="form-msg" id="fOut" role="status"></div></form></div></div>
+<div id="site-footer"></div>
+<script src="js/config.js"></script>
+<script src="js/products-data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/components.js"></script>
+<script src="js/auth.js"></script>
 </body>
-
 </html>
