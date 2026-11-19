@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shop All – Men, Women & Accessories | RT Fashion Hub</title>
-<meta name="description" content="Browse and filter all RT Fashion Hub products: men’s and women’s clothing, accessories and bags. Sort by price or rating.">
-<meta property="og:title" content="Shop All – Men, Women & Accessories | RT Fashion Hub"><meta property="og:description" content="Browse and filter all RT Fashion Hub products: men’s and women’s clothing, accessories and bags. Sort by price or rating."><meta property="og:image" content="images/brand/logo.png">
-<link rel="icon" type="image/png" href="images/brand/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop All – Men, Women & Accessories | RT Fashion Hub</title>
+  <meta name="description"
+    content="Browse and filter all RT Fashion Hub products: men’s and women’s clothing, accessories and bags. Sort by price or rating.">
+  <meta property="og:title" content="Shop All – Men, Women & Accessories | RT Fashion Hub">
+  <meta property="og:description"
+    content="Browse and filter all RT Fashion Hub products: men’s and women’s clothing, accessories and bags. Sort by price or rating.">
+  <meta property="og:image" content="images/brand/logo.png">
+  <link rel="icon" type="image/png" href="images/brand/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body data-page="shop">
-<div id="site-header"></div>
-<section class="page-hero"><div class="crumbs">Home / Shop</div><h1 id="shopTitle">Shop All</h1><p>Explore every piece in the RT Fashion Hub collection — search, filter and sort to find your look.</p></section>
-<main class="section--tight"><div class="container"><div class="shop-layout">
- <aside class="filters" id="filters" aria-label="Filters"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px"><strong style="font-family:var(--font-head);font-size:1.2rem">Filters</strong><button class="icon-btn filter-toggle" id="filterClose" aria-label="Close filters" data-ico="x"></button></div>
-  <div class="grp"><h4>Category</h4><div class="chip-list" id="catList"></div></div>
-  <div class="grp"><h4>Collection</h4><div class="chip-list" id="colList"></div></div>
-  <button class="btn btn--outline btn--sm btn--block" id="clearFilters">Clear all filters</button></aside>
- <section><div class="shop-bar"><button class="btn btn--outline btn--sm filter-toggle" id="filterOpen"><span data-ico="filter"></span> Filters</button>
-  <label class="shop-search"><span data-ico="search"></span><span class="sr-only">Search products</span><input id="shopSearch" type="search" placeholder="Search products by name or category"></label>
-  <label class="sr-only" for="sort">Sort</label><select class="sort" id="sort"><option value="featured">Sort: Featured</option><option value="plh">Price: Low to High</option><option value="phl">Price: High to Low</option><option value="rating">Customer Rating</option></select></div>
-  <p class="count" id="count" role="status"></p><div class="product-grid" id="grid"></div></section></div></div></main>
-<div class="overlay" id="filterOverlay"></div>
-<div id="site-footer"></div>
-<script src="js/config.js"></script>
-<script src="js/products-data.js"></script>
-<script src="js/store.js"></script>
-<script src="js/components.js"></script>
-<script src="js/shop.js"></script>
+  <div id="site-header"></div>
+  <section class="page-hero">
+    <div class="crumbs">Home / Shop</div>
+    <h1 id="shopTitle">Shop All</h1>
+    <p>Explore every piece in the RT Fashion Hub collection — search, filter and sort to find your look.</p>
+  </section>
+  <main class="section--tight">
+    <div class="container">
+      <div class="shop-layout">
+        <aside class="filters" id="filters" aria-label="Filters">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px"><strong
+              style="font-family:var(--font-head);font-size:1.2rem">Filters</strong><button
+              class="icon-btn filter-toggle" id="filterClose" aria-label="Close filters" data-ico="x"></button></div>
+          <div class="grp">
+            <h4>Category</h4>
+            <div class="chip-list" id="catList"></div>
+          </div>
+          <div class="grp">
+            <h4>Collection</h4>
+            <div class="chip-list" id="colList"></div>
+          </div>
+          <button class="btn btn--outline btn--sm btn--block" id="clearFilters">Clear all filters</button>
+        </aside>
+        <section>
+          <div class="shop-bar"><button class="btn btn--outline btn--sm filter-toggle" id="filterOpen"><span
+                data-ico="filter"></span> Filters</button>
+            <label class="shop-search"><span data-ico="search"></span><span class="sr-only">Search products</span><input
+                id="shopSearch" type="search" placeholder="Search products by name or category"></label>
+            <label class="sr-only" for="sort">Sort</label><select class="sort" id="sort">
+              <option value="featured">Sort: Featured</option>
+              <option value="plh">Price: Low to High</option>
+              <option value="phl">Price: High to Low</option>
+              <option value="rating">Customer Rating</option>
+            </select>
+          </div>
+          <p class="count" id="count" role="status"></p>
+          <div class="product-grid" id="grid"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <div class="overlay" id="filterOverlay"></div>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/shop.js"></script>
 </body>
+
 </html>

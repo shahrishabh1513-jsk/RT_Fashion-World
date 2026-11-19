@@ -1,21 +1,3 @@
-/* ==========================================================================
-   RT FASHION HUB – PRODUCT CATALOGUE  (edit this file to manage products)
-   --------------------------------------------------------------------------
-   HOW TO EDIT
-   • price      : regular price in INR (number). ALL PRICES BELOW ARE PLACEHOLDERS (999).
-   • salePrice  : set a number LOWER than price to show a SALE tag + discount
-                  automatically (e.g. price: 1499, salePrice: 999).  null = no sale.
-   • badge      : "Trending", "New Arrival", "Best Seller" … or null for none.
-   • image      : path to the product photo, e.g. "images/man/rt-001.webp" (folder by category).
-                  Leave "" to show the branded placeholder.
-   • images     : (optional) extra gallery photos, e.g. ["images/products/rt-001-b.jpg"]
-   • description: (optional) your own product text for the details page.
-   • link       : original Flipkart reference link ("" = none).
-   • rating     : supplied customer rating.
-   Categories used by the shop filters: Men, Women, Accessories, Bags, Jewelry.
-   IMAGE RULE: images/<folder>/<product id>.webp  (man, woman, Accessories, Bags, Jewelry),
-   e.g. images/man/rt-001.webp. Missing files fall back to the branded placeholder.
-   ========================================================================== */
 window.RT_PRODUCTS = [
   { id: "rt-001", name: "U.S. POLO ASSN. Men Solid Polo Neck Pure Cotton White T-Shirt", category: "Men", collection: "men", subcategory: "T-Shirts", rating: 4.3, price: 999, salePrice: null, badge: null, image: "images/man/rt-001.webp", link: "https://dl.flipkart.com/s/Ih9q8fNNNN" },
   { id: "rt-002", name: "U.S. POLO ASSN. Men Graphic Print Polo Neck Pure Cotton Blue T-Shirt", category: "Men", collection: "men", subcategory: "T-Shirts", rating: 4.5, price: 999, salePrice: null, badge: "Trending", image: "images/man/rt-002.webp", link: "https://dl.flipkart.com/s/URxmMcuuuN" },
