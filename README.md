@@ -4,7 +4,7 @@
       <img src="https://github.com/user-attachments/assets/90c19f97-8b0b-4df1-96c4-a288d337503c" width="110" alt="Shah Rishabh badge logo"/>
     </td>
     <td width="60%" align="center" valign="middle">
-      <img src="./assets/rt-fashion-hub-logo.png" width="280" alt="RT Fashion Hub logo"/>
+      <img src="https://github.com/user-attachments/assets/9da8b7af-1c70-40d8-868c-021d201cec93" width="280" alt="RT Fashion Hub logo"/>
     </td>
     <td width="20%" align="center" valign="middle">
       <img src="https://github.com/user-attachments/assets/41de0edc-f0a3-474a-9156-d8b3d10d41ba" width="110" alt="Shah Rishabh badge logo"/>
@@ -13,8 +13,6 @@
 </table>
 
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:111827,55:BE185D,100:EC4899&height=150&section=header&text=RT_Fashion%20World&fontSize=44&fontColor=ffffff&fontAlignY=45" width="100%"/>
 
 <h3>Pick Your Size. Pick Your Colour. Wear It Tomorrow.</h3>
 
