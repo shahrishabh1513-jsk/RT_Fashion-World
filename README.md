@@ -27,7 +27,7 @@
 <a href="https://github.com/shahrishabh1513-jsk/RT_Fashion-World"><img src="https://img.shields.io/badge/REPOSITORY-View_Code-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 <a href="https://github.com/shahrishabh1513-jsk/RT_Fashion-World/stargazers"><img src="https://img.shields.io/badge/⭐_STAR-Support_This_Repo-FBCFE8?style=for-the-badge&logoColor=black"/></a>
 
-<br/><br/>
+<br/>
 
 <img src="https://img.shields.io/badge/DEPARTMENTS-6-BE185D?style=for-the-badge&labelColor=111827"/>
 <img src="https://img.shields.io/badge/SALE-Up_to_40%25_Off-EC4899?style=for-the-badge&labelColor=111827"/>
@@ -35,7 +35,7 @@
 <img src="https://img.shields.io/badge/RETURNS-15_Days-BE185D?style=for-the-badge&labelColor=111827"/>
 <img src="https://img.shields.io/badge/PAYMENTS-UPI%2C_Cards_%26_COD-EC4899?style=for-the-badge&labelColor=111827"/>
 
-<br/><br/>
+<br/>
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
@@ -76,7 +76,7 @@
 <tr>
 <td align="center">
 <a href="https://shahrishabh1513-jsk.github.io/RT_Fashion-World/" target="_blank">
-<img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fshahrishabh1513-jsk.github.io%2FRT_Fashion-World%2F?w=1400" width="100%" alt="RT_Fashion World home page"/>
+<img src="https://github.com/user-attachments/assets/41fc622c-2de3-4ab9-9d88-7c96e9ff08da" width="100%" alt="RT_Fashion World home page"/>
 </a>
 </td>
 </tr>
@@ -89,25 +89,22 @@
 <td align="center" width="50%">
 <b>🛍️ Shop</b><br/><br/>
 <a href="https://shahrishabh1513-jsk.github.io/RT_Fashion-World/products.html" target="_blank">
-<img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fshahrishabh1513-jsk.github.io%2FRT_Fashion-World%2Fproducts.html?w=1000" width="100%" alt="Shop page"/>
+<img src="https://github.com/user-attachments/assets/3a1959ed-0cda-456d-88d8-052e4d7cc5a3" width="100%" alt="Shop page"/>
 </a>
 </td>
 <td align="center" width="50%">
 <b>ℹ️ About Us</b><br/><br/>
 <a href="https://shahrishabh1513-jsk.github.io/RT_Fashion-World/about.html" target="_blank">
-<img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fshahrishabh1513-jsk.github.io%2FRT_Fashion-World%2Fabout.html?w=1000" width="100%" alt="About page"/>
+<img src="https://github.com/user-attachments/assets/b5a99573-2764-445a-ab33-73a52b9c4425" width="100%" alt="About page"/>
 </a>
 </td>
 </tr>
 </table>
-
 <br/>
 
 <a href="https://shahrishabh1513-jsk.github.io/RT_Fashion-World/" target="_blank"><img src="https://img.shields.io/badge/🛍️_OPEN_THE_STORE-BE185D?style=for-the-badge"/></a>
 
 </div>
-
-> 💡 Screenshots are captured live by a free service — if one shows blank on first load, refresh once and it fills in within a minute.
 
 <div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:EC4899,55:BE185D,100:111827&height=4&section=header"/></div>
 
@@ -369,7 +366,7 @@ cd RT_Fashion-World
 <a href="mailto:shahrishu1515@gmail.com"><img src="https://img.shields.io/badge/Email-EC4899?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <a href="https://github.com/shahrishabh1513-jsk"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 
-<br/><br/>
+<br/>
 
 ### ⭐ If you like this project, give it a star — it helps a lot!
 
