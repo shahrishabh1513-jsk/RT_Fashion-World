@@ -11,8 +11,9 @@
     return (out.trim() || "Zero") + " Rupees" + (p ? " and " + two(p) + " Paise" : "") + " Only";
   }
   let logoCache;
-  function logo() { return logoCache || (logoCache = new Promise(res => { const i = new Image(); i.onload = () => { const c = document.createElement("canvas"); c.width = i.naturalWidth; c.height = i.naturalHeight; c.getContext("2d").drawImage(i, 0, 0); res({ data: c.toDataURL("image/png"), w: i.naturalWidth, h: i.naturalHeight }); }; i.onerror = () => res(null); i.src = "images/brand/logo.png"; })); }
-  const dt = d => new Date(d).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" });
+function logo(){ return logoCache || (logoCache = new Promise(res => { const i = new Image(); i.onload = () => { try { const c = document.createElement("canvas"); c.width = i.naturalWidth; c.height = i.naturalHeight; c.getContext("2d").drawImage(i, 0, 0); res({data:c.toDataURL("image/png"), w:i.naturalWidth, h:i.naturalHeight}); } catch (e) { res(null); } }; i.onerror = () => res(null); i.src = window.RT_LOGO || LOGO_URL; })); }
+const LOGO_URL = "images/brand/logo.png";
+const dt = d => new Date(d).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" });
 
   RT.invoice = {
     async download(o) {

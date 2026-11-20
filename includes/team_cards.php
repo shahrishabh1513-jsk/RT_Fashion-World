@@ -1,0 +1,2 @@
+<div class="team"><?php foreach (require __DIR__ . '/team.php' as [$n, $r, $em]): $ini = implode('', array_map(fn($w) => $w[0], explode(' ', $n))); ?>
+  <div class="member reveal"><div class="avatar" role="img" aria-label="<?= e($n) ?> profile placeholder"><?= e($ini) ?></div><h3><?= e($n) ?></h3><div class="role"><?= e($r) ?></div><a class="mail" href="mailto:<?= e($em) ?>"><?= e($em) ?></a></div><?php endforeach; ?></div>

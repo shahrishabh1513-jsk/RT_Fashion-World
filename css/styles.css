@@ -2886,3 +2886,25 @@ select.sort {
     grid-row: span 2
   }
 }
+/* ---------- PHP version additions ---------- */
+a.chip{text-decoration:none}
+.user-dropdown form button{display:block;width:100%;text-align:left;padding:10px 12px;border-radius:8px;font-size:.88rem}
+.user-dropdown form button:hover{background:var(--warm)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius)}
+table.tbl{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+.tbl th{background:var(--primary);color:#fff;text-align:left;padding:12px 14px;font-weight:600;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.tbl td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:middle}
+.tbl tr:nth-child(even) td{background:var(--warm)}
+.tbl input,.tbl select,.tbl textarea{padding:8px 10px;border:1px solid var(--line);border-radius:8px;width:100%;background:#fff}
+.admin-nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.admin-nav a{padding:10px 18px;border-radius:999px;border:1px solid var(--line);font-weight:600;font-size:.86rem}
+.admin-nav a.on,.admin-nav a:hover{background:var(--primary);color:#fff}
+.stat-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:28px}
+.stat-card{border:1px solid var(--line);border-radius:var(--radius);padding:22px;background:#fff}
+.stat-card b{display:block;font-family:var(--font-head);font-size:2rem;color:var(--primary)}
+.stat-card span{color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.1em}
+.pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:700;background:var(--warm);border:1px solid var(--line)}
+.pill--ok{background:#eaf6ee;color:var(--ok);border-color:#bfe0c9}.pill--off{background:#fdecea;color:var(--danger);border-color:#f3bdb8}
+.inline-form{display:inline}
+.bill-sheet{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow)}
+@media print{.site-header,.site-footer,.drawer,.overlay,.to-top,.no-print,.page-hero{display:none!important}.bill-sheet{border:0;box-shadow:none}}

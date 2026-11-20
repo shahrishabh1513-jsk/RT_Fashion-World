@@ -11,7 +11,7 @@ window.RT_CONFIG = {
    /* Your repository. This project had no .git folder, so no remote URL could be read.
       Paste your real URL (e.g. "https://github.com/<user>/<repo>"); the footer button
       stays hidden until this is set. */
-   githubUrl: "",
+   githubUrl: "https://github.com/shahrishabh1513-jsk/RT_Fashion-World",
 
    /* Social links – leave "" to hide an icon. */
    social: { instagram: "", facebook: "", whatsapp: "https://wa.me/917861976128" },

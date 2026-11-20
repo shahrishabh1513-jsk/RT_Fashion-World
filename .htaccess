@@ -1,0 +1,11 @@
+DirectoryIndex index.php index.html
+# Apache (XAMPP) hardening – blocks direct web access to internals
+Options -Indexes
+<FilesMatch "\.(sql|md|json|log|ini)$">
+  Require all denied
+</FilesMatch>
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
